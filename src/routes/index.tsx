@@ -131,6 +131,33 @@ function Index() {
         <ScratchReveal src={mariyaImg} />
       </section>
 
+      <section className="relative px-6 pb-20 max-w-2xl mx-auto">
+        <div className="rounded-3xl bg-gradient-to-br from-[oklch(0.93_0.05_65)] to-[oklch(0.88_0.06_55)] border-2 border-dashed border-[oklch(0.5_0.08_50)] p-8 shadow-xl">
+          <p className="text-center text-xs uppercase tracking-[0.4em] text-[oklch(0.45_0.08_50)] mb-4">
+            from kg-ii to forever
+          </p>
+          <h3 className="font-serif italic text-3xl text-center text-[oklch(0.3_0.1_45)] mb-5">
+            we grew up together 🤎
+          </h3>
+          <p className="text-[oklch(0.32_0.05_50)] leading-relaxed text-center">
+            Mariya, can you believe it? From tiny chairs in KG-II, scribbling in our notebooks
+            and sharing snacks at break, to standing here today watching you crush your results —
+            I've had a front-row seat to every chapter. We've laughed till our stomachs hurt,
+            cried over the silliest things, fought, made up in five minutes, and somehow grew up
+            side by side without even noticing.
+          </p>
+          <p className="mt-4 text-[oklch(0.32_0.05_50)] leading-relaxed text-center">
+            You're not just my friend — you're a part of every memory I'd never trade. Watching
+            you win like this feels personal, because in a way, a piece of me is celebrating
+            with you. I'm so unbelievably proud of the girl I met all those years ago, and the
+            woman she became.
+          </p>
+          <p className="mt-5 font-serif italic text-center text-lg text-[oklch(0.35_0.1_45)]">
+            Here's to us — and to many more wins ahead. Always your friend, Nameer. 🤎
+          </p>
+        </div>
+      </section>
+
       <section className="relative px-6 pb-24 max-w-2xl mx-auto text-center">
         <div className="rounded-3xl bg-[oklch(0.92_0.04_60)] border-2 border-[oklch(0.55_0.08_50)] p-8 shadow-xl">
           <p className="font-serif italic text-2xl text-[oklch(0.3_0.08_45)] leading-relaxed">
