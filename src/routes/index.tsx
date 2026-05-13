@@ -148,16 +148,6 @@ function Index() {
         </div>
       </section>
 
-      <section className="relative px-6 pb-24 max-w-2xl mx-auto text-center">
-        <div className="rounded-3xl bg-[oklch(0.92_0.04_60)] border-2 border-[oklch(0.55_0.08_50)] p-8 shadow-xl">
-          <p className="font-serif italic text-2xl text-[oklch(0.3_0.08_45)] leading-relaxed">
-            "The future belongs to those who believe in the beauty of their dreams."
-          </p>
-          <p className="mt-6 text-[oklch(0.4_0.05_50)]">
-            Congratulations again, brilliant girl. This is just the beginning. 🌷
-          </p>
-        </div>
-      </section>
 
       <footer className="relative pb-10 text-center text-sm text-[oklch(0.45_0.05_50)]">
         made with 🤎 by Nameer
