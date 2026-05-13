@@ -140,20 +140,10 @@ function Index() {
             we grew up together 🤎
           </h3>
           <p className="text-[oklch(0.32_0.05_50)] leading-relaxed text-center">
-            Mariya, can you believe it? From tiny chairs in KG-II, scribbling in our notebooks
-            and sharing snacks at break, to standing here today watching you crush your results —
-            I've had a front-row seat to every chapter. We've laughed till our stomachs hurt,
-            cried over the silliest things, fought, made up in five minutes, and somehow grew up
-            side by side without even noticing.
-          </p>
-          <p className="mt-4 text-[oklch(0.32_0.05_50)] leading-relaxed text-center">
-            You're not just my friend — you're a part of every memory I'd never trade. Watching
-            you win like this feels personal, because in a way, a piece of me is celebrating
-            with you. I'm so unbelievably proud of the girl I met all those years ago, and the
-            woman she became.
+            Ponnaree Rinuaaa congrats for your resultsssss ELLAA RATHRIYUM Orangathe irunn padich nediyedh aan nee. one of your best days ever in ur life aan inn.. Ini university okke nammakk sett akkkaaa ankk ishtallee course okke nammk padikkaaa.
           </p>
           <p className="mt-5 font-serif italic text-center text-lg text-[oklch(0.35_0.1_45)]">
-            Here's to us — and to many more wins ahead. Always your friend, Nameer. 🤎
+            ANYWYSS CONGRATSSS THALLEEEE 🥹🥹🤎🤎🤎🤎
           </p>
         </div>
       </section>
