@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
+import confetti from "canvas-confetti";
 import congratsImg from "@/assets/congrats.png";
 import mariyaImg from "@/assets/mariya.png";
 
@@ -37,23 +38,40 @@ function ScratchReveal({ src }: { src: string }) {
     ctx.fillText("a little surprise for you", width / 2, height / 2 + 20);
   }, []);
 
+  const strokes = useRef(0);
+
+  const fireConfetti = () => {
+    const end = Date.now() + 1200;
+    const colors = ["#8b5a3c", "#c79170", "#e8c39e", "#fff1d6", "#a0522d"];
+    (function frame() {
+      confetti({ particleCount: 6, angle: 60, spread: 70, origin: { x: 0 }, colors });
+      confetti({ particleCount: 6, angle: 120, spread: 70, origin: { x: 1 }, colors });
+      if (Date.now() < end) requestAnimationFrame(frame);
+    })();
+    confetti({ particleCount: 120, spread: 100, origin: { y: 0.5 }, colors });
+  };
+
   const scratch = (x: number, y: number) => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!canvas || revealed) return;
     const ctx = canvas.getContext("2d")!;
     const rect = canvas.getBoundingClientRect();
     const cx = ((x - rect.left) / rect.width) * canvas.width;
     const cy = ((y - rect.top) / rect.height) * canvas.height;
     ctx.globalCompositeOperation = "destination-out";
     ctx.beginPath();
-    ctx.arc(cx, cy, 40, 0, Math.PI * 2);
+    ctx.arc(cx, cy, 90, 0, Math.PI * 2);
     ctx.fill();
+  };
 
-    // Check reveal %
-    const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
-    let cleared = 0;
-    for (let i = 3; i < data.length; i += 4 * 50) if (data[i] === 0) cleared++;
-    if (cleared / (data.length / (4 * 50)) > 0.5) setRevealed(true);
+  const endStroke = () => {
+    drawing.current = false;
+    if (revealed) return;
+    strokes.current += 1;
+    if (strokes.current >= 3) {
+      setRevealed(true);
+      fireConfetti();
+    }
   };
 
   return (
